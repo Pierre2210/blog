@@ -1,0 +1,89 @@
+<h1>Listing participants</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Passcode</th>
+    <th>Sign in count</th>
+    <th>Current sign in at</th>
+    <th>Last sign in at</th>
+    <th>Current sign in ip</th>
+    <th>Last sign in ip</th>
+    <th>Created at</th>
+    <th>Updated at</th>
+    <th>Illustration</th>
+    <th>Table number</th>
+    <th>Session</th>
+    <th>Score</th>
+    <th>Signature</th>
+    <th>Virtual table</th>
+    <th>Cs1</th>
+    <th>Cs2</th>
+    <th>Cs3</th>
+    <th>Cs4</th>
+    <th>Cs5</th>
+    <th>Cs6</th>
+    <th>Cs7</th>
+    <th>Cs8</th>
+    <th>Cs9</th>
+    <th>Cs10</th>
+    <th>Cs11</th>
+    <th>Cs12</th>
+    <th>Cs13</th>
+    <th>Cs14</th>
+    <th>Cs15</th>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @participants.each do |participant| %>
+  <tr>
+    <td><%= participant.id %></td>
+    <td><%= participant.passcode %></td>
+    <td><%= participant.sign_in_count %></td>
+    <td><%= participant.current_sign_in_at %></td>
+    <td><%= participant.last_sign_in_at %></td>
+    <td><%= participant.current_sign_in_ip %></td>
+    <td><%= participant.last_sign_in_ip %></td>
+    <td><%= participant.created_at %></td>
+    <td><%= participant.updated_at %></td>
+    <td><img src="<%= participant.illustration %>" alt="<%= participant.name %>"  title="<%= participant.id %>"/></td>
+    <td><%= participant.table_number %></td>
+    <td><%= participant.session_id %></td>
+    <td><%= participant.score %></td>
+    <td><%= participant.signature %></td>
+    <td><%= participant.virtual_table_id %></td>
+    <td><%= participant.cs1 %></td>
+    <td><%= participant.cs2 %></td>
+    <td><%= participant.cs3 %></td>
+    <td><%= participant.cs4 %></td>
+    <td><%= participant.cs5 %></td>
+    <td><%= participant.cs6 %></td>
+    <td><%= participant.cs7 %></td>
+    <td><%= participant.cs8 %></td>
+    <td><%= participant.cs9 %></td>
+    <td><%= participant.cs10 %></td>
+    <td><%= participant.cs11 %></td>
+    <td><%= participant.cs12 %></td>
+    <td><%= participant.cs13 %></td>
+    <td><%= participant.cs14 %></td>
+    <td><%= participant.cs15 %></td>
+    <td><%= participant.first_name %></td>
+    <td><%= participant.last_name %></td>
+    <td><%= participant.name %></td>
+    <td><%= participant.email %></td>
+    <td><%= link_to 'Show', participant %></td>
+    <td><%= link_to 'Edit', edit_participant_path(participant) %></td>
+    <td><%= link_to 'Destroy', participant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Participant', new_participant_path %>
