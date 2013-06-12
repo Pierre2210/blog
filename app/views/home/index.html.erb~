@@ -29,6 +29,7 @@
   <li><a href="WoW.html">Who's Who ?</a>
   <li><a href="http://www.peugeot.fr/" target="_blank">Official Website</a>
   <li><a href="/animals">Animals</a>
+  <li><a href="/participants">Participants</a>
 </ul>
 
 <!-- Contenu principal -->
@@ -62,8 +63,8 @@
 
 <footer>
 <!-- Signer et dater la page, c'est une question de politesse! -->
-<address>June, 11th 2013<br>
-  By Amina Ouadday.</address>
+<address>June, 12th 2013<br>
+  By Pierre ALLIEL.</address>
 </footer>
 </body>
 </html>
