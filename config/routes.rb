@@ -1,23 +1,17 @@
 Blog::Application.routes.draw do
 
-  ActiveAdmin.routes(self)
+  root :to => "home#index"
 
+  ActiveAdmin.routes(self)
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   resources :participants
-
-
   resources :animals
-
-
-  #resources :comments
-
-
+  resources :comments
   resources :articles do 
 	resources:comments
   end
 
-  get "home/index"
   #get "animals/index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -68,7 +62,6 @@ Blog::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => "home#index"
   #root :to => "animals#index"
   # See how all your routes lay out with "rake routes"
 

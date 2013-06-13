@@ -1,0 +1,37 @@
+ActiveAdmin.register Participant do
+    index do                            
+    column :email
+	 column :first_name
+	 column :id
+    column :created_at                     
+	 column :current_sign_in_at
+	 column :illustration
+	 column :last_name
+	 column :last_sign_in_ip
+	 column :name
+	 column :passcode
+	 column :score
+	 column :session_id
+	 column :sign_in_count
+	 column :signature
+	 column :table_number
+	 column :updated_at
+	 column :virtual_table_id
+	 column :cs1
+    column :cs2
+    column :cs3
+    column :cs4
+    column :cs5
+    column :cs6
+    column :cs7
+    column :cs8
+    column :cs9
+    column :cs10
+    column :cs11
+    column :cs12
+    column :cs13
+    column :cs14
+    column :cs15
+    default_actions                   
+  end                                 
+end
